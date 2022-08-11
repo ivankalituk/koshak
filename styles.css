@@ -1,0 +1,50 @@
+body{
+    margin: 0 auto;
+    max-width: 1440px;
+    font-family: "Oswald";
+}
+
+* ul,p{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin: 53px 7.6% 0 7.6%;
+}
+
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.nav{
+    width: 478px;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul li{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 8px;
+    /* color: white; */
+}
+
+.nav ul li:nth-child(1){
+    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid white; */
+}
+
+.catback{
+    position: static;
+    z-index: -20;
+    top: -30px;
+    right: 0;
+}
