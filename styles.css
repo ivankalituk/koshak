@@ -8,9 +8,11 @@ body{
     --grayspecial: #444444;
 }
 
+.header_container img{
+    cursor: pointer;
+}
 
-
-* ul,p{
+* ul,p,img{
     margin: 0;
     padding: 0;
 }
@@ -85,6 +87,7 @@ header{
     color: white;
     text-transform: uppercase;
     font-family: "Oswald";
+    cursor: pointer;
 }
 
 /* режим питания */
@@ -189,6 +192,7 @@ header{
 .catexample_info{
     background-color: #F2F2F2;
     padding: 70px 0 75px 7.6%;
+    position: relative;
 }
 
 .cat_info{
@@ -267,3 +271,101 @@ header{
     font-size: 20px;
 }
 
+/* двойное фото кота */
+.catimg{
+    display: flex;
+    align-self: center;
+    /* margin-right: 100px; */
+}
+
+/* слайдер который нихера не слайдер */
+/* с мерджин колхоз */
+.range{
+    margin-left: 90px;
+    display: flex;
+    
+}
+
+.slider_exp{
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.slider_exp:first-child{
+    margin-right: 24px;
+}
+
+.slider_exp:last-child{
+    margin-left: 24px;
+}
+
+.cat_before_after{
+   position: absolute;
+   right: 7.6%;
+   bottom: 70px;
+}
+
+/* блок карты */
+
+.map{
+    position: relative;
+    z-index: -100;
+}
+
+.mappin{
+    position: absolute;
+    top: 131px;
+    right: 419px;
+}
+
+.street, .city{
+    font-family: "Arial";
+    font-size: 16px;
+    width: 155px;
+}
+
+.street + .city{
+    margin-top: 19px;
+}
+
+.map_info_heading{
+    width: 163px;
+    font-size: 20px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-right: 87px;
+}
+
+.map_info{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 66px 89px 50px 76px;
+    top: 95px;
+    left: 110px;
+}
+
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 57 7.6% 57 7.6%;
+}
+
+.social_links img + img{
+    margin-left: 30px;
+}
+
+.social_links img{
+    cursor: pointer;
+}
+
+.academy{
+    display: flex;
+    cursor: pointer;
+}
+
+.academy div + img{
+    margin-left: 22px;
+}
