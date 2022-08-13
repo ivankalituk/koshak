@@ -12,9 +12,18 @@ body{
     cursor: pointer;
 }
 
+/* обнуление */
 * ul,p,img{
     margin: 0;
     padding: 0;
+}
+
+.tebletlogo{
+    display: none;
+}
+
+.mobileheader{
+    display: none;
 }
 
 header{
@@ -58,6 +67,11 @@ header{
     right: 0;
 }
 
+.backcatmob{
+    position: absolute;
+    display: none;
+}
+
 /* второй подблок хэдера */
 .second_head_container{
     margin: 32px auto 51px 13%;
@@ -88,6 +102,7 @@ header{
     text-transform: uppercase;
     font-family: "Oswald";
     cursor: pointer;
+    font-size: 20px;
 }
 
 /* режим питания */
@@ -124,6 +139,7 @@ header{
     line-height: 24px;
     font-weight: 400;
     font-size: 16px;
+    width: 467px;
 }
 
 .katalog{
@@ -283,7 +299,7 @@ header{
 .range{
     margin-left: 90px;
     display: flex;
-    
+    margin-top: 19px;
 }
 
 .slider_exp{
@@ -311,6 +327,10 @@ header{
 .map{
     position: relative;
     z-index: -100;
+}
+
+.pcmap{
+    width: 100%;
 }
 
 .mappin{
@@ -368,4 +388,250 @@ header{
 
 .academy div + img{
     margin-left: 22px;
+}
+
+/* tablet */
+@media (max-width: 1440px) and (min-width: 768px){
+
+    /* header */
+    .pclogo{
+        display: none;
+    }
+
+    .tebletlogo{
+        display: block;
+    }
+
+    header{
+        padding: 24px 3.9% 0 3.9%;
+        /* padding: 0; */
+    }
+
+    .backcat{
+        display: none;
+    }
+
+    .nav{
+        width: 62.2%;
+    }
+
+    .nav ul li{
+        font-size: 18px;
+        padding-bottom: 10px;
+        color: black;
+    }
+
+    .nav ul li:nth-child(1){
+        border-bottom: 2px solid #68B738;
+    }
+
+    /* second header */
+    .second_head_container{
+        position: relative;
+        display: block;
+        margin: 0;
+    }
+    .sec_head_text{
+        margin: 60px 0 0 15.2%;
+    }
+    .canofshit{
+        display: block;
+        width: 709px;
+        height: 609px;
+        margin:auto;
+    }
+
+    .secondary_head_text{
+        margin-bottom: 20px;
+    }
+
+    .head_button{
+        position: absolute;
+        top: 230px
+    }
+
+    /* cat diets */
+    .cat_diets{
+        display: block;
+        margin: 0 4% 0 4%;
+        justify-content: center;
+    }
+
+    .diet{
+        width: 100%;
+        position: relative;
+    }
+
+    .cat_diets .diet + .diet{
+        margin-top: 30px;
+    }
+
+    .diet_text{
+        max-width: 467px;
+        width: 49%;
+        margin: 24px 0 52px;
+    }
+
+    .diet_name{
+        margin-left: 0;
+    }
+
+    .dietimg1{
+        width: 200px;
+        height: 211px;
+        position: absolute;
+        display: block;
+        
+        margin-top: 81px;
+        margin-bottom: auto;
+        top: 0;
+        right: 8%;
+    }
+
+    .dietimg2{
+        width: 268px;
+        height: 200px;
+        position: absolute;
+        display: block;
+        
+        margin-top: 91px;
+        margin-bottom: auto;
+        top: 0;
+        right: 8%;
+    }
+
+    .diet_container{
+        padding: 77px 0 57px 52px;
+    }
+
+    /* how it works */
+    .hiwblocks{
+        flex-wrap: wrap;
+    }
+
+    .howitworks_container{
+        margin: 45px 14% 0 4%;
+    }
+    
+    .howitworks{
+        padding-bottom: 80px;
+        border-bottom: 1px solid #E6E6E6;
+    }
+}
+
+/* mobile */
+@media (max-width: 767px){
+
+    /* header */
+    header{
+        padding: 11px 6.2% 17px 6.2%;
+    }
+
+    .header_container{
+        align-items: center;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .pclogo{
+        display: none;
+    }
+
+    .mobileheader{
+        display: block;
+    }
+
+    /* second header */
+    .second_head_container{
+        margin: 0;
+        position: relative;
+        display: block;
+    }
+
+    .backcat{
+        display: none;
+    }
+
+    .sec_head_text{
+        text-align: center;
+        color: white;
+        margin: 0;
+        padding-top: 27px;
+    }
+
+    .backcatmob{
+        position: absolute;
+        display: block;
+        width: 100%;
+        z-index: -100;
+        top: 0;
+    }
+
+    .canofshit{
+        display: block;
+        margin: auto;
+        width: 87.5%;
+    }
+
+    .main_head_text{
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 25px;
+    }
+    .secondary_head_text{
+        margin-bottom: 29px;
+    }
+
+    .head_button{
+        display: block;
+        position: absolute;
+        bottom: -50px;
+        margin-left: 6.25%;
+        margin-right: 6.25%;
+        width: 87.5%;
+        font-size: 14px;
+        padding: 7px 13.75% 7px 13.75%;
+    }
+
+    /* cat diet */
+    .cat_diets{
+        display: block;
+        margin: 65px 6.25% 0 6.25%;
+    }
+
+    .cat_diets .diet + .diet{
+        margin-top: 20px;
+    }
+
+    .dietimg1{
+        width: 50px;
+        height: 53px;
+    }
+    .dietimg2{
+        width: 67px;
+        height: 28px;
+    }
+
+    .diet_container{
+        padding: 21px 0 22px 22px;
+    }
+    .diet_name{
+        font-size: 24px;
+        line-height: 37px;
+        margin-left: 19px;
+    }
+
+    .diet{
+        width: 100%;
+    }
+
+    .diet_text{
+        width: 95%;
+        margin-top: 22px;
+        margin-bottom: 20px;
+        padding-bottom: 23px;
+        border-bottom: 1px solid #D9D9D9;
+    }
 }
