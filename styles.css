@@ -215,7 +215,7 @@ header{
 /* ниже заголовка */
 .catexample_info{
     background-color: #F2F2F2;
-    padding: 70px 0 75px 7.6%;
+    padding: 70px 7.6% 75px 7.6%;
     position: relative;
 }
 
@@ -225,6 +225,10 @@ header{
     font-family: "Arial";
     color: var(--graytext);
     margin-bottom: 70px;
+}
+
+.slidermobile{
+    display: none;
 }
 
 /* блоки в рамке для веса */
@@ -295,39 +299,35 @@ header{
     font-size: 20px;
 }
 
-/* двойное фото кота */
-.catimg{
-    display: flex;
-    align-self: center;
-    /* margin-right: 100px; */
-}
 
 /* слайдер который нихера не слайдер */
-/* с мерджин колхоз */
-.range{
-    margin-left: 90px;
-    display: flex;
-    margin-top: 19px;
+/* сделать вместо него слайдер */
+.cat_before_after{
+    position: absolute;
+    bottom: 75px;
+    right: 0;
+    width: 690px;
+    text-align: center;
 }
 
-.slider_exp{
-    text-transform: uppercase;
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider span{
     font-size: 20px;
     line-height: 30px;
 }
 
-.slider_exp:first-child{
-    margin-right: 24px;
+.slider img{
+    margin: 0 20px 0 24px;
 }
 
-.slider_exp:last-child{
-    margin-left: 24px;
-}
-
-.cat_before_after{
-   position: absolute;
-   right: 7.6%;
-   bottom: 70px;
+.catbefore{
+    width: 690px;
 }
 
 /* блок карты */
@@ -549,13 +549,20 @@ header{
     }
 
     .cat_before_after{
-        display: none;
+        margin: 40px auto 67px auto;
+        position: static;
+        display: block;
     }
 
+    /* серый абсолютный фон для планшетов */
+
+
     .catexample_info{
+        z-index: -2;
         background-color: white;
         padding: 0;
         margin:  0 4% 0 4%;
+        position: static;
     }
 
     .cat_info{
@@ -763,7 +770,52 @@ header{
     }
 
     .cat_before_after{
+        position: static;
+        display: block;
+        width: 320px;
+        margin: 0 auto 0 auto;
+    }
+
+    .catbefore{
+        width: 320px;
+    }
+
+    .slider{
         display: none;
+    }
+
+    .slidermobile{
+        align-items: center;
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slidermobile .slider_inner{
+        margin: 0 12px 0 12px;
+    }
+
+    .slider_inner{
+        width: 84px;
+        height: 14px;
+        background-color: white;
+        border: 1px solid #CDCDCD;
+        border-radius: 6px;
+    }
+
+    .slider_content{
+        width: 35px;
+        height: 6px;
+        background: #68B738;
+        border-radius: 6px;
+        margin: 4px 43px 4px 6px;
+        
+        transform: translate(0px, 0px);
+        transition: 0.5s;
+    }
+
+    .slider_content._active{
+        transform: translate(35px, 0px)
     }
 
     .catexample_info{
