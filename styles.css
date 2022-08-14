@@ -204,6 +204,10 @@ header{
     font-size: 60px;
 }
 
+.cat_b_a_mobile{
+    display: none;
+}
+
 /* ниже заголовка */
 .catexample_info{
     background-color: #F2F2F2;
@@ -329,13 +333,21 @@ header{
     z-index: -100;
 }
 
+.tabletmap{
+    display: none;
+}
+
+.mobilemap{
+    display: none;
+}
+
 .pcmap{
     width: 100%;
 }
 
 .mappin{
     position: absolute;
-    top: 131px;
+    bottom: 163px;
     right: 419px;
 }
 
@@ -509,6 +521,14 @@ header{
         flex-wrap: wrap;
     }
 
+    .hiwblock:first-child, .hiwblock:nth-child(3){
+        margin-right: 23%;
+    }
+
+    .hiwblock:nth-child(1), .hiwblock:nth-child(2){
+        margin-bottom: 37px;
+    } 
+
     .howitworks_container{
         margin: 45px 14% 0 4%;
     }
@@ -516,6 +536,65 @@ header{
     .howitworks{
         padding-bottom: 80px;
         border-bottom: 1px solid #E6E6E6;
+    }
+
+    /* live example */
+    .catexample_heading{
+        padding: 43px 0 63px 4%;
+        margin: 0;
+    }
+
+    .cat_before_after{
+        display: none;
+    }
+
+    .catexample_info{
+        background-color: white;
+        padding: 0;
+        margin:  0 4% 0 4%;
+    }
+
+    .cat_info{
+        width: 92%;
+        margin-bottom: 54px;
+    }
+
+    .cat_sec_info_and_explain{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .second_info_explain{
+        display: block;
+        margin: 0;
+
+    }
+
+    /* map */
+
+    .pcmap{
+        display: none;
+    }
+
+    .tabletmap{
+        display: block;
+        width: 100%;
+    }
+
+    .map_info{
+        position: static;
+        padding: 66px 9.3% 60px 9.3%;
+    }
+
+    .mappin{
+        right: 41.9%;
+        bottom: 25%;
+    }
+
+    /* footer */
+    .footer_container{
+        margin: 60px 4% 66px 4%;
     }
 }
 
@@ -580,6 +659,7 @@ header{
         line-height: 36px;
         margin-bottom: 25px;
     }
+
     .secondary_head_text{
         margin-bottom: 29px;
     }
@@ -633,5 +713,169 @@ header{
         margin-bottom: 20px;
         padding-bottom: 23px;
         border-bottom: 1px solid #D9D9D9;
+    }
+
+    /* how it works */
+    .howitworks_container{
+        margin: 27px 6.6% 42px 6.6%;
+    }
+
+    .hiwblocks{
+        display: block;
+    }
+
+    .hiwblocks  .hiwblock + .hiwblock{
+        margin-top: 20px;
+    }
+
+    .hiwnum{
+        display: none;
+    }
+
+    .hiwblock{
+        display: flex;
+        width: 100%;
+    }
+
+    .hiwtext{
+        width: 100%;
+    }
+
+    .hiwlogo{
+        margin: 0 6.6% 0 0;
+        width: 60px;
+        height: 60px;
+    }
+
+    /* live example */
+    .catexample_heading{
+        background-color: #F2F2F2;
+        font-size: 36px;
+        line-height: 40px;
+        padding: 26px 0 33px 6.25%;
+        margin: 0;
+    }
+
+    .cat_before_after{
+        display: none;
+    }
+
+    .catexample_info{
+        padding: 0 6.25% 39px 6.25%;
+    }
+
+    .cat_info{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .cat_second_info{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .second_info_explain{
+        max-width: 217px;
+        font-size: 16px;
+        margin: 25px auto 42px auto;
+    }
+
+    .money:first-child{
+        margin-right: 0;
+    }
+
+    .second_info_explain div + div{
+        padding-left: 5px;
+    }
+
+    .money{
+        font-size: 16px;
+    }
+
+    .days{
+        padding: 14px 20px 17px 20px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .weight{
+        padding: 14px 42px 17px 42px;
+
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .weight_meaning{
+        width: 65px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .days_meaning{
+        width: 87px;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    /* map */
+    .pcmap{
+        display: none;
+    }
+
+    .mobilemap{
+        display: block;
+        width: 100%;
+    }
+
+    .map_info{
+        position: static;
+        padding: 28px 6.25% 22px 6.25%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .map_info_heading{
+        font-size: 16px;
+        line-height: 18px;
+        margin: 0;
+    }
+
+    .adress{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .adress .street + .city{
+        margin-top: 10px;
+    }
+
+    .mappin{
+        right: 40%;
+        bottom: 35%;
+        height: 57px;
+        width: 53px;
+    }
+
+    /* footer */
+    .footer_container{
+        display: block;
+        margin: 30px 6.25% 32px 6.25%;
+        text-align: center;
+    }
+
+    .social_links{
+        justify-content: center;
+        padding: 24px 0 24px 0;
+        border-bottom: 1px solid #D9D9D9;
+        border-top: 1px solid #D9D9D9;
+        margin: 32px 0 28px 0;
+    }
+    
+    .academy{
+        justify-content: space-between;
+    }
+
+    .academy div + img {
+        margin-left: 0;
     }
 }
