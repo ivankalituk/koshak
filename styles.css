@@ -8,6 +8,10 @@ body{
     --grayspecial: #444444;
 }
 
+body._lock{
+    overflow: hidden;
+}
+
 .header_container img{
     cursor: pointer;
 }
@@ -880,8 +884,6 @@ header{
     .academy div + img {
         margin-left: 0;
     }
-
-
 
     /* BURGER BUTTON */
     .nav{
